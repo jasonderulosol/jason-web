@@ -1,0 +1,203 @@
+/*-- responsive --*/
+
+/*-- 1700px --*/
+
+@media screen and (max-width: 1700px) {
+  .container {
+    width: 900px;
+  }
+  section {
+    padding-block: 5rem;
+  }
+  .description {
+    margin-bottom: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 0;
+
+    text-align: left;
+  }
+
+  h1 {
+    font-size: 15rem;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 6rem;
+  }
+  h4 {
+    font-size: 3rem;
+  }
+
+  #about {
+    padding-block: 5rem;
+  }
+  #about-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  #about-box > img {
+    width: 100%;
+  }
+
+  #slogan-02-box {
+    gap: 2rem;
+  }
+  #slogan-02-box > img {
+    width: 300px;
+  }
+}
+
+/*-- 1000px --*/
+
+@media screen and (max-width: 1000px) {
+  .container {
+    width: 100%;
+  }
+  section {
+    padding-inline: 2rem;
+    padding-block: 2rem;
+  }
+  h1 {
+    font-size: 50vw;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 4rem;
+  }
+  h4 {
+    font-size: 2.5rem;
+  }
+
+  .btn-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 1rem;
+  }
+
+  #main-menu {
+    display: none;
+  }
+
+  #hero {
+    height: 100%;
+    padding-block: 20rem 2rem;
+  }
+  #hero-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  #hero-box > div {
+    margin-bottom: 2rem;
+
+    gap: 0.5rem;
+  }
+
+  #about-box > div > div {
+    flex-direction: column;
+  }
+
+  #tweets {
+    overflow: hidden;
+  }
+  #tweets-box {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: start;
+    align-items: start;
+    gap: 1rem;
+  }
+  #tweets-box img {
+    height: 200px;
+
+    margin-top: 0;
+  }
+
+  #slogan-02-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  #slogan-02-box > img {
+    width: 80%;
+    margin-top: -9rem;
+
+    transform: scaleX(-1);
+  }
+
+  #token-box {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 1rem;
+  }
+  #token-box > div:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  #token-box > div:nth-child(2) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  #token-box iframe {
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    height: 600px;
+  }
+  #integrated-terminal {
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    padding: 1rem;
+  }
+
+  #buy-box {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 2rem;
+  }
+  #buy .description {
+    margin-bottom: 4rem;
+  }
+  #buy-box > div h3 {
+    margin-top: -3rem;
+  }
+
+  #footer {
+    padding-block: 2rem;
+  }
+  #footer-box {
+    display: flex;
+    flex-direction: column-reverse;
+
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  #footer-box > div:nth-child(1) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}
