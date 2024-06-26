@@ -80,7 +80,23 @@ button {
 .btn-1 {
   background-color: var(--clr-3);
 }
+.btn-1:hover {
+  border-radius: 0.5rem;
+}
 .btn-2 {
+  background-color: var(--clr-2);
+}
+.btn-2:hover {
+  border-radius: 0.5rem;
+}
+.btn-3 {
+  color: var(--clr-2);
+  background-color: transparent;
+  border: solid 1px var(--clr-3);
+  border-radius: 0.5rem;
+}
+.btn-3:hover {
+  color: var(--clr-3);
 }
 
 .btn-flex {
@@ -193,12 +209,24 @@ button {
 }
 
 #about-box > div > div {
+  width: 100%;
   margin-top: 2rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  gap: 2rem;
 }
-#about-box > div > div a {
+#about-box > div > div > div {
   position: relative;
 
   padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
 
   background-color: var(--clr-0);
   border: solid 1px var(--clr-2-tr);
@@ -206,18 +234,22 @@ button {
 
   overflow: hidden;
 }
-#about-box > div > div a img {
+#about-box > div > div > div h4,
+#about-box > div > div > div p,
+#about-box > div > div > div a {
+  position: relative;
+  z-index: 1;
+}
+#about-box > div > div > div a {
+  margin-top: 1rem;
+}
+#about-box > div > div > div img {
   position: absolute;
   z-index: 0;
   top: 0;
   right: 0;
 
   width: 200px;
-}
-#about-box > div > div a h4,
-#about-box > div > div a p {
-  position: relative;
-  z-index: 1;
 }
 
 #about-box > img {
@@ -254,6 +286,11 @@ button {
 
   border: solid 1px var(--clr-2-tr);
   border-radius: 0.5rem;
+
+  transition: 300ms;
+}
+#tweets-box img:hover {
+  transform: translateY(-1rem);
 }
 
 /*-- slogan-02 --*/
