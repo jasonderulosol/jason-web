@@ -48,6 +48,10 @@
     width: 100%;
   }
 
+  #tweets {
+    overflow: hidden;
+  }
+
   #slogan-02-box {
     gap: 2rem;
   }
@@ -70,7 +74,7 @@
     font-size: 50vw;
   }
   h2 {
-    font-size: 4rem;
+    font-size: 20vw;
   }
   h3 {
     font-size: 4rem;
@@ -112,9 +116,6 @@
     flex-direction: column;
   }
 
-  #tweets {
-    overflow: hidden;
-  }
   #tweets-box {
     display: flex;
     flex-direction: row;
